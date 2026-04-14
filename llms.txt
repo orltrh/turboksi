@@ -1,0 +1,35 @@
+# Turboksi — PT Turbo Kontrol Solusi
+
+> Engineering and technology solutions company specializing in rotating equipment,
+> condition monitoring, root cause analysis, and industrial training across Indonesia.
+
+- Company: PT Turbo Kontrol Solusi (Turboksi)
+- Website: https://turboksi.com
+- Email: info@turboksi.com
+- Founded: 2023
+- NIB: 0707230279356
+- SK Kemenkumham: AHU-0048596.AH.01.01.TAHUN 2023
+- Location: Jl. KH Abdullah Syafei, Tebet Timur, South Jakarta 12820, Indonesia
+
+## Services
+
+Rotating Equipment Design & Selection, Condition Monitoring & Predictive Maintenance,
+Root Cause Failure Analysis (RCFA), Training & Consultancy, Maintenance Strategy Development,
+PLC Programming & Automation, AI-Powered Analytics, Reliability Centered Maintenance (RCM),
+Project Management & Technical Advisory.
+
+## Products
+
+- RCA Tool: https://rcatool.site — Structured digital platform for industrial Root Cause Analysis.
+  Features: evidence collection, Fishbone diagrams, 5-Why analysis, corrective action planning,
+  automatic PDF report generation. Free and Pro plans. Used by 80+ users in Indonesia.
+- RCM Tool: Coming soon — Reliability Centered Maintenance platform for defining optimal
+  maintenance strategies for critical industrial assets.
+
+## Clients
+
+Pertamina, PLN, Geodipa, Vale, Pupuk Iskandar Muda
+
+## Industries Served
+
+Oil & Gas, Power Generation, Geothermal, Mining, Manufacturing

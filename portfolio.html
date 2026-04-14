@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — PT Turbo Kontrol Solusi (Turboksi)</title>
+  <meta name="description" content="Selected consulting and analysis projects by PT Turbo Kontrol Solusi (Turboksi) across oil and gas, power generation, and manufacturing in Indonesia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="Turboksi home">
+    <img src="assets/img/logo_turboksi.png" alt="Turboksi logo" width="52" height="52">
+    <span class="nav-brand-name">PT. Turbo Kontrol Solusi</span>
+  </a>
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#products">Products</a></li>
+    <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <a href="index.html#contact" class="nav-cta">Contact Us</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero page-hero--parallax">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Portfolio</nav>
+    <h1>Our Portfolio</h1>
+    <p>Selected engineering and consulting work delivered across Indonesia since 2023.</p>
+  </div>
+</div>
+
+<section class="section" aria-label="Portfolio projects">
+  <div class="container">
+    <div class="section-header anim-up">
+      <div class="section-label">Project Work</div>
+      <h2 class="section-title">Engineering projects across nine service areas</h2>
+      <p class="section-desc">Each project reflects a real engagement — from failure investigation and automation to training and reliability strategy.</p>
+    </div>
+    <div class="portfolio-filters" role="group" aria-label="Filter by service">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Rotating Equipment">Rotating Equipment</button>
+      <button class="filter-btn" data-filter="Condition Monitoring">Condition Monitoring</button>
+      <button class="filter-btn" data-filter="RCFA">RCFA</button>
+      <button class="filter-btn" data-filter="Training">Training</button>
+      <button class="filter-btn" data-filter="Maintenance Strategy">Maintenance Strategy</button>
+      <button class="filter-btn" data-filter="PLC &amp; Automation">PLC &amp; Automation</button>
+      <button class="filter-btn" data-filter="AI Analytics">AI Analytics</button>
+      <button class="filter-btn" data-filter="RCM">RCM</button>
+      <button class="filter-btn" data-filter="Project Management">Project Management</button>
+    </div>
+    <div id="portfolio-grid" aria-live="polite">
+      <p class="no-results">Loading projects…</p>
+    </div>
+  </div>
+</section>
+
+<div class="page-cta page-cta--parallax" role="complementary">
+  <div class="container">
+    <h2>Have a project in mind?</h2>
+    <p>Tell us about your engineering challenge and we will outline how we can help.</p>
+    <a href="mailto:ptturbokontrolsolusi@gmail.com" class="btn-primary">Contact Us →</a>
+  </div>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <strong>PT Turbo Kontrol Solusi</strong> &nbsp;·&nbsp;
+  Jl. KH Abdullah Syafei, Tebet Timur, South Jakarta 12820 &nbsp;·&nbsp;
+  ptturbokontrolsolusi@gmail.com<br>
+  <span>© 2025 PT Turbo Kontrol Solusi. All rights reserved.</span>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Back to top">↑</button>
+
+<!-- Project detail modal -->
+<div class="modal-overlay" id="project-modal" hidden role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">×</button>
+    <img class="modal-thumb" src="" alt="" style="display:none;">
+    <div class="modal-thumb-placeholder" style="display:none;"></div>
+    <div class="modal-body">
+      <div class="modal-meta">
+        <span class="portfolio-sector modal-sector"></span>
+        <span class="meta-type modal-type"></span>
+        <span class="meta-year modal-year"></span>
+      </div>
+      <h2 class="modal-title"></h2>
+      <div class="modal-location"></div>
+      <hr class="modal-divider">
+      <div class="modal-section-label">Overview</div>
+      <p class="modal-text modal-desc"></p>
+      <hr class="modal-divider">
+      <div class="modal-section-label">Challenge</div>
+      <p class="modal-text modal-challenge"></p>
+      <hr class="modal-divider">
+      <div class="modal-section-label">Approach</div>
+      <p class="modal-text modal-approach"></p>
+      <hr class="modal-divider">
+      <div class="modal-section-label">Outcome</div>
+      <p class="modal-text modal-outcome"></p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>

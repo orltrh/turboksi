@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Centrifugal Pump Failure Analysis",
+    "sector": "Oil & Gas",
+    "type": "RCFA + Report",
+    "year": 2023,
+    "location": "East Kalimantan, Indonesia",
+    "image": "assets/img/portfolio/pump-failure.jpg",
+    "thumbGradient": "linear-gradient(135deg, #0B2545, #1B4F8A)",
+    "description": "Root cause investigation of recurring pump failures at an oil and gas facility. Identified bearing wear patterns and lubrication deficiencies. Delivered corrective and preventive action plan.",
+    "challenge": "The facility experienced repeated bearing failures on a critical centrifugal pump, resulting in three unplanned shutdowns within six months, causing significant production losses and increasing maintenance costs.",
+    "approach": "Applied systematic RCFA methodology including equipment teardown inspection, lubrication oil analysis, vibration data review, and Fishbone diagram mapping to identify all contributing causes. Interviewed operations and maintenance personnel to establish the failure timeline.",
+    "outcome": "Root cause identified as improper bearing installation combined with incorrect lubricant selection for the operating temperature range. Issued a corrective action plan covering installation procedure revision, lubricant specification update, and quarterly monitoring schedule. No recurrence reported in the 12-month follow-up period."
+  },
+  {
+    "id": 2,
+    "title": "Unplanned Shutdown RCA: Steam Turbine",
+    "sector": "Power Generation",
+    "type": "RCA + Consultancy",
+    "year": 2023,
+    "location": "Central Java, Indonesia",
+    "image": "assets/img/portfolio/steam-turbine.jpg",
+    "thumbGradient": "linear-gradient(135deg, #1B4F8A, #2874C8)",
+    "description": "Systematic investigation of a critical steam turbine trip using Fishbone and 5-Why methodology. Findings presented to plant management with structured actionable recommendations.",
+    "challenge": "A 50 MW steam turbine at a power generation facility experienced an unplanned trip during peak load, resulting in significant generation loss and grid stability concerns. The root cause was initially unclear, with multiple suspected contributing systems.",
+    "approach": "Conducted a structured investigation using Fishbone analysis across six cause categories: machine, method, material, measurement, environment, and human factors. Reviewed DCS trip records, vibration trends, steam quality data, and maintenance history. Facilitated root cause confirmation workshop with plant engineering team.",
+    "outcome": "Root cause identified as a combination of moisture carryover in the steam supply and a degraded axial thrust bearing. Recommendations included steam separator maintenance schedule revision, bearing inspection interval tightening, and alarm threshold optimization. Management accepted all recommendations and budgeted for implementation in the next planned outage."
+  },
+  {
+    "id": 3,
+    "title": "In-House RCA Training Program",
+    "sector": "Manufacturing",
+    "type": "Training",
+    "year": 2024,
+    "location": "Cikarang, West Java, Indonesia",
+    "image": "assets/img/portfolio/rca-training.jpg",
+    "thumbGradient": "linear-gradient(135deg, #0f3460, #16213e)",
+    "description": "2-day intensive training for 20+ engineering and maintenance personnel. Covered RCA methodology, Fishbone diagrams, 5-Why, and documentation best practices with live case studies.",
+    "challenge": "The client's maintenance team was responding reactively to recurring equipment failures with no structured investigation process. Repeat failures were common, and there was no standardized way to document findings or share lessons learned across shifts.",
+    "approach": "Designed and delivered a 2-day in-house training program customized for the client's manufacturing environment. Sessions covered RCA theory, Fishbone diagram construction, 5-Why facilitation, and evidence collection techniques. Participants worked through three live case studies drawn from the client's own failure history.",
+    "outcome": "23 maintenance and engineering personnel completed the program. The client adopted RCA Tool as their standard investigation platform immediately following the training. Within the first three months, the team completed five documented investigations independently with no external facilitation required."
+  }
+]

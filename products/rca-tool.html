@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCA Tool — Root Cause Analysis Platform by Turboksi</title>
+  <meta name="description" content="RCA Tool by Turboksi — a structured digital platform for industrial Root Cause Analysis. Evidence collection, Why Tree analysis, and automatic PDF report generation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-brand" aria-label="Turboksi home">
+    <img src="../assets/img/logo_turboksi.png" alt="Turboksi logo" width="52" height="52">
+    <span class="nav-brand-name">PT. Turbo Kontrol Solusi</span>
+  </a>
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../services.html">Services</a></li>
+    <li><a href="../index.html#products" aria-current="page">Products</a></li>
+    <li><a href="../portfolio.html">Portfolio</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <a href="../index.html#contact" class="nav-cta">Contact Us</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero page-hero--parallax">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a> / <a href="../index.html#products">Products</a> / RCA Tool
+    </nav>
+    <div style="margin-bottom:var(--space-sm);">
+      <span class="product-tag product-tag--live">Live · Active</span>
+    </div>
+    <h1>From Incident to RCA Report in One Platform</h1>
+    <p>A structured digital platform for Root Cause Analysis investigations — from evidence collection and Why Tree analysis to a print-ready PDF report.</p>
+    <div style="margin-top:var(--space-md);">
+      <a href="https://rcatool.site/register" target="_blank" rel="noopener" class="btn-primary">Start for Free →</a>
+      <a href="https://rcatool.site" target="_blank" rel="noopener" class="btn-ghost" style="margin-left:0.75rem;">View Demo</a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:2.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.12);flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;color:#fff;line-height:1;">90+</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:4px;">Active users</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;color:#fff;line-height:1;">4</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:4px;">Simple steps</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;color:#fff;line-height:1;">Free</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:4px;">No credit card</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Shadow: hero → what is RCA (dark) -->
+<div class="section-shadow section-shadow--light-to-dark" aria-hidden="true"></div>
+
+<!-- What is RCA — DARK -->
+<section class="section rca-section--dark" aria-label="What is RCA">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+      <div>
+        <div class="section-label">What is RCA?</div>
+        <h2 class="section-title" style="margin-top:0.5rem;">Root Cause Analysis — find the cause, not just the symptom</h2>
+        <p style="font-size:15px;margin-top:1rem;line-height:1.7;">RCA is a systematic method for identifying the underlying cause of an incident — not just the visible symptoms. By finding the root cause, companies can prevent similar incidents from happening again.</p>
+        <p style="font-size:13px;color:var(--clr-text-muted);margin-top:0.75rem;">Widely used in manufacturing, oil &amp; gas, energy, and production facilities worldwide.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0;">
+        <div style="background:var(--clr-blue-lt);border:1px solid var(--clr-border);border-radius:var(--r-sm);padding:0.5rem 1rem;font-size:13px;font-weight:600;color:var(--clr-blue);white-space:nowrap;width:fit-content;">Incident occurs</div>
+        <div style="width:2px;height:20px;background:var(--clr-border-hover);margin-left:1.25rem;"></div>
+        <div style="background:var(--clr-blue-lt);border:1px solid var(--clr-border);border-radius:var(--r-sm);padding:0.5rem 1rem;font-size:13px;font-weight:600;color:var(--clr-blue);width:fit-content;">Evidence collection</div>
+        <div style="width:2px;height:20px;background:var(--clr-border-hover);margin-left:1.25rem;"></div>
+        <div style="background:var(--clr-blue-lt);border:1px solid var(--clr-border);border-radius:var(--r-sm);padding:0.5rem 1rem;font-size:13px;font-weight:600;color:var(--clr-blue);width:fit-content;">Root cause analysis</div>
+        <div style="width:2px;height:20px;background:var(--clr-border-hover);margin-left:1.25rem;"></div>
+        <div style="background:var(--clr-blue-lt);border:1px solid var(--clr-border);border-radius:var(--r-sm);padding:0.5rem 1rem;font-size:13px;font-weight:600;color:var(--clr-blue);width:fit-content;">Action recommendations</div>
+        <div style="width:2px;height:20px;background:var(--clr-border-hover);margin-left:1.25rem;"></div>
+        <div style="background:#DCFCE7;border:1px solid rgba(16,185,129,0.25);border-radius:var(--r-sm);padding:0.5rem 1rem;font-size:13px;font-weight:600;color:#065F46;width:fit-content;">Prevention of recurrence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shadow: dark → features (light) -->
+<div class="section-shadow section-shadow--dark-to-light" aria-hidden="true"></div>
+
+<!-- Features — LIGHT -->
+<section class="section rca-section--light" aria-label="Features">
+  <div class="container">
+    <div class="section-header anim-up">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything your team needs for structured RCA</h2>
+      <p class="section-desc">RCA Tool guides engineering teams through a consistent, auditable investigation process.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card anim-up">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+        </div>
+        <h4>Evidence Collection</h4>
+        <p>Guided data entry for incident records, equipment history, and physical evidence. Keeps all investigation data in one place from day one.</p>
+      </div>
+
+      <div class="feature-card anim-up anim-delay-1">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+        </div>
+        <h4>Why Tree Analysis</h4>
+        <p>Build structured Why Tree diagrams to map cause-and-effect chains systematically — drilling down from the visible symptom to the true root cause.</p>
+      </div>
+
+      <div class="feature-card anim-up anim-delay-2">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h4>Corrective Action Planning</h4>
+        <p>Define corrective and preventive actions with responsible owners, due dates, and status tracking — ensuring findings lead to real improvements.</p>
+      </div>
+
+      <div class="feature-card anim-up">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h4>Automatic PDF Report</h4>
+        <p>Generate a professional, formatted investigation report in one click — ready to present to plant management or include in audit documentation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Shadow: light → how it works (dark) -->
+<div class="section-shadow section-shadow--light-to-dark" aria-hidden="true"></div>
+
+<!-- How It Works — DARK -->
+<section class="section rca-section--dark" aria-label="How it works">
+  <div class="container">
+    <div class="section-header anim-up">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">From incident to formal report in four steps</h2>
+    </div>
+    <div class="steps-list">
+      <div class="step-item anim-up">
+        <div class="step-number" aria-hidden="true">1</div>
+        <div>
+          <h4>Create a new investigation</h4>
+          <p>Fill in incident details, location, date, and equipment involved. The platform guides you through every step — no separate template needed.</p>
+        </div>
+      </div>
+      <div class="step-item anim-up anim-delay-1">
+        <div class="step-number" aria-hidden="true">2</div>
+        <div>
+          <h4>Collect data using the 4P framework</h4>
+          <p>Document interviews, field conditions, technical documents, and physical evidence in a structured, unified workspace.</p>
+        </div>
+      </div>
+      <div class="step-item anim-up anim-delay-2">
+        <div class="step-number" aria-hidden="true">3</div>
+        <div>
+          <h4>Analyse root cause with Why Tree</h4>
+          <p>Build an interactive Why Tree diagram to find the true root cause — not just the visible symptoms.</p>
+        </div>
+      </div>
+      <div class="step-item anim-up">
+        <div class="step-number" aria-hidden="true">4</div>
+        <div>
+          <h4>Download a professional PDF report</h4>
+          <p>A complete report including all findings, diagrams, root causes, and corrective actions — ready to present to management.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shadow: dark → screenshots (light) -->
+<div class="section-shadow section-shadow--dark-to-light" aria-hidden="true"></div>
+
+<!-- Screenshots — LIGHT -->
+<section class="section rca-section--light" aria-label="Screenshots">
+  <div class="container">
+    <div class="section-header anim-up">
+      <div class="section-label">See It in Action</div>
+      <h2 class="section-title">A clean interface, an intuitive workflow</h2>
+      <p class="section-desc">Designed so that field teams and management can use it without any special training.</p>
+    </div>
+    <div class="features-grid anim-up" style="grid-template-columns:repeat(3,1fr);">
+      <div style="background:var(--clr-surface-solid);border:1px solid var(--clr-border);border-radius:var(--r-lg);overflow:hidden;">
+        <div style="height:160px;background:var(--clr-blue-lt);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr-text-muted)" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <span style="font-size:11px;color:var(--clr-text-muted);">Add screenshot here</span>
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:13px;font-weight:600;color:var(--clr-text-primary);border-top:1px solid var(--clr-border);">Investigation dashboard</div>
+      </div>
+      <div style="background:var(--clr-surface-solid);border:1px solid var(--clr-border);border-radius:var(--r-lg);overflow:hidden;">
+        <div style="height:160px;background:var(--clr-blue-lt);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr-text-muted)" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+          <span style="font-size:11px;color:var(--clr-text-muted);">Add screenshot here</span>
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:13px;font-weight:600;color:var(--clr-text-primary);border-top:1px solid var(--clr-border);">Why Tree analysis</div>
+      </div>
+      <div style="background:var(--clr-surface-solid);border:1px solid var(--clr-border);border-radius:var(--r-lg);overflow:hidden;">
+        <div style="height:160px;background:var(--clr-blue-lt);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--clr-text-muted)" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span style="font-size:11px;color:var(--clr-text-muted);">Add screenshot here</span>
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:13px;font-weight:600;color:var(--clr-text-primary);border-top:1px solid var(--clr-border);">PDF report output</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shadow: light → social proof (dark) -->
+<div class="section-shadow section-shadow--light-to-dark" aria-hidden="true"></div>
+
+<!-- Social Proof — DARK -->
+<section class="section rca-section--dark" aria-label="Social proof">
+  <div class="container" style="max-width:680px;">
+    <div style="background:var(--clr-surface-solid);border:1px solid var(--clr-border);border-radius:var(--r-xl);padding:2.5rem;text-align:center;">
+      <div style="font-family:var(--font-display);font-size:3.5rem;color:var(--clr-navy);line-height:1;">90+</div>
+      <div style="color:var(--clr-text-secondary);font-size:14px;margin-top:0.5rem;">users across various industries in Indonesia</div>
+      <div style="border-top:1px solid var(--clr-border);margin:1.5rem 0;"></div>
+      <p style="font-size:13px;color:var(--clr-text-muted);font-style:italic;line-height:1.75;max-width:440px;margin:0 auto 0.75rem;">"This platform has greatly helped our team conduct incident investigations in a systematic and structured way. The generated reports can be presented directly to management."</p>
+      <div style="font-size:12px;color:var(--clr-text-muted);">— [User name &amp; title, optional]</div>
+    </div>
+  </div>
+</section>
+
+<!-- Shadow: dark → pricing (light) -->
+<div class="section-shadow section-shadow--dark-to-light" aria-hidden="true"></div>
+
+<!-- Pricing — LIGHT -->
+<section class="section rca-section--light" aria-label="Pricing">
+  <div class="container">
+    <div class="section-header anim-up">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Start free, upgrade when you need more</h2>
+      <p class="section-desc">No credit card required to get started. The free plan covers solo investigations with full core features.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card anim-up">
+        <h3>Free</h3>
+        <div class="pricing-price">Rp 0</div>
+        <p style="font-size:13px;color:var(--clr-text-muted);margin-top:0.25rem;">Forever free · No credit card needed</p>
+        <ul class="pricing-features">
+          <li>Up to 3 active investigations</li>
+          <li>Full Why Tree analysis builder</li>
+          <li>PDF report generation</li>
+          <li>Single user account</li>
+        </ul>
+        <a href="https://rcatool.site/register" target="_blank" rel="noopener" class="pricing-cta">Get Started Free</a>
+      </div>
+      <div class="pricing-card pricing-card--pro anim-up anim-delay-1">
+        <h3>Pro</h3>
+        <div class="pricing-price" style="color:var(--clr-white);">Contact Us</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:0.25rem;">For teams and ongoing investigation programs</p>
+        <ul class="pricing-features">
+          <li>Unlimited investigations</li>
+          <li>Advanced analytics dashboard</li>
+          <li>Priority support</li>
+          <li>Custom report branding</li>
+        </ul>
+        <a href="mailto:ptturbokontrolsolusi@gmail.com" class="pricing-cta">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page CTA — parallax dark -->
+<div class="page-cta page-cta--parallax" role="complementary">
+  <div class="container">
+    <h2>Ready to run your first RCA investigation?</h2>
+    <p>Join 90+ users across Indonesian industrial facilities already using RCA Tool.</p>
+    <a href="https://rcatool.site/register" target="_blank" rel="noopener" class="btn-primary">Create Free Account →</a>
+  </div>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <strong>PT Turbo Kontrol Solusi</strong> &nbsp;·&nbsp;
+  Jl. KH Abdullah Syafei, Tebet Timur, South Jakarta 12820 &nbsp;·&nbsp;
+  ptturbokontrolsolusi@gmail.com<br>
+  <span>© 2025 PT Turbo Kontrol Solusi. All rights reserved.</span>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Back to top">↑</button>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
