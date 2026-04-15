@@ -83,19 +83,37 @@
         </ul>
       </div>
 
-      <div>
+      <div style="width:100%;max-width:480px;">
         <p style="font-size:14px;color:var(--clr-text-muted);margin-bottom:var(--space-sm);">
           Want to be notified when it launches?
         </p>
-        <a href="mailto:ptturbokontrolsolusi@gmail.com?subject=RCM Tool Launch Notification&body=Hi Turboksi team,%0A%0AI'd like to be notified when the RCM Tool is available.%0A%0AName:%0ACompany:%0A" class="btn-primary">
-          Notify Me When It Launches →
-        </a>
+        <form id="notify-form" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
+          <input type="hidden" name="subject" value="RCM Tool — New Launch Notification Request">
+          <input type="hidden" name="from_name" value="Turboksi Website">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your email address"
+            style="flex:1;min-width:0;padding:0.65rem 1rem;border:1px solid var(--clr-border);border-radius:var(--r-md);font-size:14px;font-family:var(--font-body);background:var(--clr-surface-solid);color:var(--clr-text-primary);outline:none;transition:border-color var(--t-fast);"
+            onfocus="this.style.borderColor='var(--clr-accent)'"
+            onblur="this.style.borderColor='var(--clr-border)'"
+          >
+          <button type="submit" class="btn-primary" style="white-space:nowrap;">Notify Me →</button>
+        </form>
+        <p id="notify-success" style="display:none;font-size:13.5px;color:#065F46;background:#DCFCE7;border:1px solid rgba(16,185,129,0.25);border-radius:var(--r-md);padding:0.65rem 1rem;margin-top:0.5rem;">
+          Done! We will email you when RCM Tool launches.
+        </p>
+        <p id="notify-error" style="display:none;font-size:13.5px;color:#991B1B;background:#FEE2E2;border:1px solid rgba(239,68,68,0.25);border-radius:var(--r-md);padding:0.65rem 1rem;margin-top:0.5rem;">
+          Something went wrong. Please try again or email us directly.
+        </p>
       </div>
 
       <p style="font-size:13px;color:var(--clr-text-muted);">
         In the meantime, explore our live
         <a href="rca-tool.html" style="color:var(--clr-blue-mid);font-weight:600;border-bottom:1px solid var(--clr-blue-mid);">RCA Tool</a>
-        — already used by 80+ users across Indonesian industrial facilities.
+        — already used by 90+ users across Indonesian industrial facilities.
       </p>
 
     </div>
@@ -111,5 +129,44 @@
 
 <button class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Back to top">↑</button>
 <script src="../assets/js/app.js"></script>
+<script>
+(function () {
+  var form    = document.getElementById('notify-form');
+  var success = document.getElementById('notify-success');
+  var error   = document.getElementById('notify-error');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    success.style.display = 'none';
+    error.style.display   = 'none';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+    })
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      if (data.success) {
+        success.style.display = 'block';
+        form.reset();
+      } else {
+        error.style.display = 'block';
+      }
+    })
+    .catch(function () {
+      error.style.display = 'block';
+    })
+    .finally(function () {
+      btn.disabled = false;
+      btn.textContent = 'Notify Me →';
+    });
+  });
+})();
+</script>
 </body>
 </html>
