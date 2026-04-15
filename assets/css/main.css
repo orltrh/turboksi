@@ -1894,6 +1894,9 @@ button { font-family: var(--font-body); }
    18. RESPONSIVE — MOBILE (640px)
    ============================================================ */
 @media (max-width: 640px) {
+  /* — Navbar: hide Contact Us button, keep only brand + hamburger — */
+  .nav-cta { display: none; }
+
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -1919,34 +1922,61 @@ button { font-family: var(--font-body); }
 
   .nav-toggle { display: flex; }
 
-  .hero-inner h1 { font-size: clamp(2rem, 9vw, 3rem); }
+  /* — Section headers: stack split layout to single column — */
+  .section-header--split {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
 
+  .section-header--split .see-all-link {
+    align-self: flex-start;
+  }
+
+  /* — Section title: tighter on mobile — */
+  .section-title { font-size: clamp(1.5rem, 7vw, 2rem); }
+
+  /* — Hero — */
+  .hero-inner h1 { font-size: clamp(2rem, 9vw, 3rem); }
   .hero-actions { flex-direction: column; align-items: stretch; gap: 0.75rem; }
   .hero-actions .btn-primary, .hero-actions .btn-ghost { justify-content: center; }
 
+  /* — Services — */
   .services-grid, .services-full-grid { grid-template-columns: 1fr; }
 
-  .portfolio-card { grid-template-columns: 1fr; }
-  .portfolio-thumb { min-height: 180px; }
-  #portfolio-grid .portfolio-card { grid-template-columns: 1fr; }
+  /* — Products — */
+  .products-grid { grid-template-columns: 1fr; }
 
+  /* — Portfolio: override the 300px specific rule, stack image above text — */
+  .portfolio-card,
+  #portfolio-grid .portfolio-card,
+  .portfolio-list .portfolio-card { grid-template-columns: 1fr; }
+  .portfolio-thumb,
+  #portfolio-grid .portfolio-thumb,
+  .portfolio-list .portfolio-thumb { min-height: 200px; }
+
+  /* — Features & pricing — */
+  .features-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+
+  /* — Contact — */
   .contact-details { flex-direction: column; }
   .contact-actions { flex-direction: column; align-items: stretch; }
   .contact-email-btn { justify-content: center; }
 
+  /* — Clients — */
   .clients-logos { gap: 0.6rem; }
-  .features-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; }
-  .page-hero { padding: 6rem var(--space-md) var(--space-lg); }
 
+  /* — Page hero & modal — */
+  .page-hero { padding: 6rem var(--space-md) var(--space-lg); }
+  .page-hero .btn-ghost { margin-left: 0 !important; margin-top: 0.5rem; }
   .modal-overlay { padding: 4rem var(--space-sm) var(--space-sm); }
   .modal-body { padding: var(--space-md); }
+  .modal-thumb, .modal-thumb-placeholder { height: 200px; }
 
-  .page-hero .btn-ghost { margin-left: 0 !important; margin-top: 0.5rem; }
-
+  /* — Misc — */
   .about-eyebrow-rule { display: none; }
   .hero-about-bridge { height: 0; }
-
 }
 
 
